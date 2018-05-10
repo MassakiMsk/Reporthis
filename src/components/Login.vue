@@ -31,16 +31,20 @@
 
         <!-- Modal Component -->
         </b-button>
-        <b-modal ref="myModalRef" hide-footer title="Using Component Methods">
+        <b-modal ref="myModalRef" hide-footer title="Cadastro">
             <div class="d-block">
-                <label for="" class="">NOME</label>
-                <input type="text" v-model='usuario.nome' class="btn-block input-form " placeholder="Digite seu nome">
-                <label for="" class="">EMAIL</label>
-                <input type="email" v-model='usuario.email' class="btn-block input-form " placeholder="Digite seu email">
-                <label for="" class="">SENHA</label>
-                <input type="password" v-model='usuario.senha' class="btn-block input-form " placeholder="Digite uma senha ">
-                <label for="" class="">CONFIMAR SENHA</label>
-                <input type="password" v-model='usuario.confimarSenha' class="btn-block input-form " placeholder="Confime sua senha">
+                <i class="fas fa-user " style="padding-right: 5px"></i>
+                    <label for="" class="">NOME</label>
+                    <input type="text" v-model='usuario.nome' class="btn-block input-form " placeholder="Digite seu nome">
+                    <i class="fas fa-envelope" style="padding-right: 5px"></i>
+                    <label for="" class="">EMAIL</label>
+                    <input type="email" v-model='usuario.email' class="btn-block input-form " placeholder="Digite seu email">
+                    <i class="fas fa-unlock" style="padding-right: 5px"></i>
+                    <label for="" class="">SENHA</label>
+                    <input type="password" v-model='usuario.senha' class="btn-block input-form " placeholder="Digite uma senha ">
+                    <i class="fas fa-lock" style="padding-right: 5px"></i>
+                    <label for="" class="">CONFIMAR SENHA</label>
+                    <input type="password" v-model='usuario.confimarSenha' class="btn-block input-form " placeholder="Confime sua senha">
             </div>
             <button type="button" class="btn-normal no-border" @click="cancelarCadastro()">Cancelar</button>
             <button type="button" class="btn-register btn-normal no-border" @click="salvar()">Registrar</button>
