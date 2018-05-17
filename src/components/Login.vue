@@ -1,7 +1,7 @@
 <template>
     <div>
         <b-container fluid>
-            <b-row>
+            <b-row >
                 <div class="b-col col md='4'"></div>
                 <div class="b-col col md='4'">
                     <h1>ReporThis</h1>

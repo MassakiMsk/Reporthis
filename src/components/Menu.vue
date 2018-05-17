@@ -1,19 +1,20 @@
 <template>
     <div>
+        <Menu2></Menu2>
         <div class="">
             <div class="navbar navbar-default">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <!-- Collect the nav links, forms, and other content for toggling -->
                     <b-container fluid>
                         <b-row>
-                            <b-col md='2' class="navbar-header">
+                            <b-col xs='2' class="navbar-header">
                                 <i class="fas fa-bars"></i>
                                 <a class="navbar-brand" href="#">ReporThis</a>
                             </b-col>
-                            <b-col md='8'>
+                            <b-col xs='8'>
                                 <input type="text" class="btn-block input-search" placeholder="Pesquisar">
                             </b-col>
-                            <b-col md='2'>
+                            <b-col xs='2'>
                                 <button class="btn-block btn-search" type="submit"><i class="fas fa-search"></i></button>
                             </b-col>
                         </b-row>
@@ -29,15 +30,17 @@
                 <a href="#">Contact</a>
                 <span class= "btn-block"style="font-size:30px;cursor:pointer" @click="openNav()">&#9776; open</span>
             </div>
-            
+              
         </div>
     </div>
 
 </template>
 
 <script>
+import Menu2 from "./Menu2.vue";
 export default {
   name: "Menu",
+  components: { Menu2 },
   data() {
     return {};
   },
